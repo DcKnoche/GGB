@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 #include<iostream>
    int op, base, indice=0;
-   int numerotransformado[64];
-   int numeroatransformar;
+   int numtrans[64];
+   int numatrans;
    char digitobase[17] =
      {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
 main(void){
@@ -21,20 +20,25 @@ switch (op)
 	case 1: 
 	system("cls");
     cout<<"Introdusca numero a transformar: ";
-    cin>> numeroatransformar;
+    cin>> numatrans;
+    retorno1:
     cout<<"Introdusca Base(Por falta de presupuesto, solo de base 2 a 17, gracias, la gerencia):";
     cin>> base; 
-    while (numeroatransformar != 0)
+    if (base>17 || base<2)
+    cout<<"Base no disponible";
+    goto retorno1;
+    
+    while (numatrans != 0)
    {
-     numerotransformado[indice] = numeroatransformar % base;
-     numeroatransformar = numeroatransformar / base;
+     numtrans[indice] = numatrans % base;
+     numatrans = numatrans / base;
      ++indice;
    }
    --indice;
    cout<<"\n\n Numero transformado = ";
    for(  ; indice>=0; indice--) 
    {
-   cout<<("%c", digitobase[numerotransformado[indice]]);
+   cout<<("%c", digitobase[numtrans[indice]]);
 	 }
    cout<<"\n";
    cout<<"Volver al menu principal? (1. Si 2. No)";
