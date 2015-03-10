@@ -22,7 +22,7 @@ main(void){
    cout<<"\n\n Numero transformado = ";
    for(  ; indice>=0; indice--) 
    {
-   cout<<("%c", digitobase[numerotransformado[indice]]);
+   cout<<("%c"<< digitobase[numerotransformado[indice]]);
 	 }
    cout<<"\n";
 }
