@@ -21,7 +21,7 @@ switch (op)
 {
 	case 1: 
 	system("cls");
-    cout<<"Introdusca numero a transformar: ";
+    cout<<"Introdusca numero a transformar(Entre 2147483647 y -2147483648, o habra riesgo de LOOP)";
     cin>> numatrans;
     retorno1:
     cout<<"Introdusca Base(Por falta de presupuesto, solo de base 2 a 17, gracias, la gerencia): ";
