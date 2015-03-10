@@ -1,8 +1,10 @@
+//Made by: Heradocles Montero C.I:23.736.217 and Luis Mendez C.I:23.885.310
+
 #include <stdio.h>
 #include <stdlib.h>
 #include<iostream>
    int op, base, indice=0;
-   int numtrans[64];
+   int numtrans[0];
    int numatrans;
    char digitobase[17] =
      {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
