@@ -8,7 +8,7 @@
      {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
 main(void){
 	using namespace std;
-    cout<<"Introdusca numero a transforma: ";
+    cout<<"Introdusca numero a transformar: ";
     cin>> numeroatransformar;
     cout<<"Introdusca Base:";
     cin>> base; 
