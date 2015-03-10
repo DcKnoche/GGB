@@ -22,20 +22,21 @@ switch (op)
     cout<<"Introdusca numero a transformar: ";
     cin>> numatrans;
     retorno1:
-    cout<<"Introdusca Base(Por falta de presupuesto, solo de base 2 a 17, gracias, la gerencia):";
+    cout<<"Introdusca Base(Por falta de presupuesto, solo de base 2 a 17, gracias, la gerencia): ";
     cin>> base; 
-    if (base>17 || base<2)
-    cout<<"Base no disponible";
+    if (base>17 || base<2){
+	cout<<"Base no disponible \n";
     goto retorno1;
-    
-    while (numatrans != 0)
+	}
+    else{    
+	while (numatrans != 0)
    {
      numtrans[indice] = numatrans % base;
      numatrans = numatrans / base;
      ++indice;
    }
    --indice;
-   cout<<"\n\n Numero transformado = ";
+   cout<<"\nNumero transformado = ";
    for(  ; indice>=0; indice--) 
    {
    cout<<("%c", digitobase[numtrans[indice]]);
@@ -50,6 +51,7 @@ switch (op)
    goto case2;
    }
    break;
+	}
    case 2: 
    case2:
    exit ( 0 );
