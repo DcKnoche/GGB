@@ -6,10 +6,10 @@ main(void)
      {'0', '1', '2', '3', '4', '5', '6', '7',
       '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
    int numeroconvertido[64];
-   long int numeroaconvertir;
+   int numeroaconvertir;
    int numerosiguiente, base, indice=0;
    printf("Mete el numero y la base deseada: ");
-   scanf("%ld %i", &numeroaconvertir, &base);
+   scanf("%d %i", &numeroaconvertir, &base);
    while (numeroaconvertir != 0)
    {
      numeroconvertido[indice] = numeroaconvertir % base;
